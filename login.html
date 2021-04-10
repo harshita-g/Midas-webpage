@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>   
+
+	<title>Login</title>  
+    <meta name="google-signin-client_id" content="541554781790-7h7l68oh9bd2g69v5o2urnig2u7i32dr.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer> 
+  
+    </script> 
+    
+	<link rel = "stylesheet" href="logme.css">
+</head>	
+
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn" style="position: relative; left:905px;top:620px; z-index: 12;"></div> 
+    <h1 style="color: white; position: relative; top: 518px; left: 940px; font-size: 28px; z-index: 12;">OR</h1>
+    <div id='content'></div>
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form onsubmit="event.preventDefault()" class="box">
+                    <h1>Login</h1>
+                    <p class="text-muted" style="color: white;"> Please enter your login and password</p> <input type="text" name="" placeholder="Username"> <input type="password" name="" placeholder="Password"> <a class="forgot text-muted" href="#">Forgot password?</a> <input type="submit" name="" value="Login" href="#">
+                    <div class="col-md-12">
+                        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script>
+    function onSignIn(googleUser){
+      console.log("User is " + JSON.stringify(googleUser.getBasicProfile()))
+      document.querySelector('#content').innerText = googleUser.getBasicProfile().getName();
+      window.open("index.html");
+      
+    }
+    function signOut(){
+        
+        gapi.auth2.getAuthInstance().signOut().then(function(){
+            console.log('user signed out')
+        })
+        
+    }
+  </script>
+</html>

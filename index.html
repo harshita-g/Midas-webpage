@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    
+
+	<title>Midas Webpage</title>    
+  <meta name="google-signin-client_id" content="541554781790-7h7l68oh9bd2g69v5o2urnig2u7i32dr.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer> 
+
+  </script>  
+
+<link rel = "stylesheet" href="style.css">
+
+
+</head>	
+
+<body>
+  <div class="parallax">
+
+ 
+  <div id='content'></div> 
+
+ 
+  <button class="g-signin2" data-onsuccess="onSignIn" style="z-index:0; position: relative; top:500px;"></button>
+ 
+
+    <script>        
+        var slideIndex = 1;
+        window.onload = function someimg(){
+            showSlides(1);
+        }
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+    </script>
+
+	<div class ="main">
+		<nav>
+			<div class="logo">
+
+                <img src = "logo.png" >
+            </div>
+            <div class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">Home</button>
+                    <div class="dropdown-content">
+                      <a href="#honelink">Link 1</a>
+                      <a href="#htwolink">Link 2</a>
+                      <a href="#hthreelink">Link 3</a>
+
+                      
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Pages</button>
+                    <div class="dropdown-content">
+                      <a href="#ponelink">Link 1</a>
+                      <a href="#ptwolink">Link 2</a>
+                      <a href="#pthreelink">Link 3</a>
+
+                      
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                      <a href="#sonelink">Link 1</a>
+                      <a href="#stwolink">Link 2</a>
+                      <a href="#sthreelink">Link 3</a>
+
+                      
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Blog</button>
+                    <div class="dropdown-content">
+                      <a href="#bonelink">Link 1</a>
+                      <a href="#btwolink">Link 2</a>
+                      <a href="#bthreelink">Link 3</a>
+                      
+                  </div>
+                  </div>
+                  
+                  <button class="dropbtn1" ><a href = '#contacts' style="text-decoration: none;">Contacts</a></button>
+                  <style>
+                    a{
+                      color: white;
+                    }
+                    a:visited{
+                      color: white;
+                    }
+                  </style>
+                  
+               
+            </div>
+            </nav>
+            <div class="name">
+                <h1>Midas IIITD</h1>
+        
+            </div>	
+            <div class="container">
+                <div class="searchbox">
+                    <input type="search" class="search" placeholder="Search....">
+
+                </div>
+            </div>       
+            <div class="upside">
+            <h1 style="z-index: 5; font-size: 18px; position: relative; left: 1580px;top:154px; color: white;">^</h1>
+          </div>
+          <div class="upside">
+            <h1 style="z-index: 5; font-size: 18px; position: relative; left: 1497px;top:174px; color: white;">^</h1>
+          </div>
+          <div class="upside">
+            <h1 style="z-index: 5; font-size: 18px; position: relative; left: 1400px;top:194px; color: white;">^</h1>
+          </div>
+          <div class="upside">
+            <h1 style="z-index: 5; font-size: 18px; position: relative; left: 1330px;top:214px; color: white;">^</h1>
+          </div>
+
+<div class= "slideshow-container" >
+    
+    
+
+    <div class="mySlides fade">
+      <img src="w1.jpg" style="width:65%;height: 600px;position:relative;left:280px;border-radius: 15px 100px;">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="w2.jpg" style="width:65%;height: 600px;position:relative;left:280px;border-radius: 15px 100px;">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="w1.jpg" style="width:65%;height: 600px;position:relative;left:280px;border-radius: 15px 100px;">
+    </div>
+
+  
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  <div>
+
+   
+    <input type="image" src="putu.png" name="saveForm1" class="button1" id="saveForm1" width="60" height="50" style="position: relative;left: 1400px;top:-315px;" onclick="instacall1()"/>
+    <script>
+    function instacall1() {
+        window.open('https://www.youtube.com/', '_blank');
+    }
+    </script>    
+    
+  </div>
+  
+  <img src ="bg1.png" style="width: 970px;
+  height: 970px;            
+  position: relative;
+  z-index: 4;
+  top: -900px;
+  left: 850px;
+  opacity: 0.8; ">
+
+  
+     
+    <button class="loginbutt" onclick="func()" >LOGIN | SIGNUP </button>  
+    <script>
+      function func(){
+        window.open("login.html");
+      }
+    </script>  
+    <div class="text">
+      <h1>Web App </h1>
+      <h1>Task</h1>
+
+    </div>   
+    <div class="text1">
+      <h1>Go to youtube</h1>
+    </div>     
+    <div class="text3">
+      <p1>Lorem Ipsum is simply dummy text of the 
+      <br>printing and typesetting industry.</p1>
+      <h1 style="z-index: 12; position: relative; left: -1200px; font-size: 25px; top: -450px;"> Welcome! </h1>
+      <b><p id="sign" style="position: relative; left:-1060px;top:-480px;z-index: 12;font-size: 25px;"></p></b>
+
+
+
+      <button class="ham">
+        
+        <span class="menuIcon material-icons">
+          <img src = "ss.png" >
+        </span>
+        <span class="xIcon material-icons">
+          <img src ="ss.png" >
+        </span>
+      </button>
+      <ul class="menu">
+        <li><button style="z-index:-10; position: relative; top:-60px; left: 25px; font-size: 18px; background-color:darkorchid; width: 240px; height: 50px; background-color: black; color: white;">My Profile</button> </li>
+        <li><button style="z-index:-10; position: relative; top:-72px; left: 25px; font-size: 18px; background-color:darkorchid; width: 240px; height: 50px;background-color: black;color: white;">Account</button> </li>
+        <!-- <li><button style="z-index:-10; position: relative; top:40px; left: 30px; font-size: 18px; background-color:darkorchid; width: 240px; height: 50px;">Settings</button> </li> -->
+        <li><button style="z-index:-10; position: relative; top:-90px; left: 25px; font-size: 18px; background-color:darkorchid; width: 240px; height: 50px; background-color: black;color: white;" onclick="signOut()">Sign Out</button> </li>
+
+      </ul>
+      <script>
+      var menu = document.querySelector(".menu")
+var ham = document.querySelector(".ham")
+var xIcon = document.querySelector(".xIcon")
+var menuIcon = document.querySelector(".menuIcon")
+
+ham.addEventListener("click", toggleMenu)
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    xIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    xIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+var menuLinks = document.querySelectorAll(".menuLink")
+
+menuLinks.forEach(
+  function (menuLink) {
+    menuLink.addEventListener("click", toggleMenu)
+  }
+)
+    </script> 
+
+    </div> 
+    
+    
+
+    </div>
+
+    <div style="height:500px; width:500px; position:relative;top:-40px;" id="honelink">
+      <img src = "imh3.png" style="height: 500px;width: 800px;">
+      <h1 style="position:relative;z-index: 12;left: 1000px; top:-300px;">hellooooooo</h1>
+
+    </div>
+    <div style="height:500px;width: 500px;position:relative; top: -10px" id="htwolink">
+        <img src = "img4.jpg" style="height: 500px;width: 800px;">
+        <h1 style="position:relative;z-index: 12;left: 1000px; top:-300px;">hellooooooo</h1>
+
+    </div>
+    <div style="height:500px;width: 500px;" id="hthreelink">
+          <img src = "img5.jpg" style="height: 500px;width: 800px; position: relative;top: 20px;">
+          <h1 style="position:relative;z-index: 12;left: 1000px; top:-300px;">hellooooooo</h1>
+  
+    </div>
+
+
+    <div style="height:500px;width: 500px;" id="ponelink">
+      <img src = "img6.jpg" style="height: 500px;width: 800px; position: relative; left: 1115px;">
+      <h1 style="position:relative;z-index: 12;left: 60px; top:-300px;">hellooooooo</h1>
+
+    </div>
+    <div style="height:500px;width: 500px;" id="ptwolink">
+      <img src = "imh3.png" style="height: 500px;width: 800px;position: relative; left: 1115px; top: 30px">
+      <h1 style="position:relative;z-index: 12;left: 60px; top:-300px;">hellooooooo</h1>
+
+    </div>
+    <div style="height:500px;width: 500px;" id="pthreelink">
+      <img src = "img2.png" style="height: 500px;width: 800px;position: relative; left: 1115px; top: 60px">
+      <h1 style="position:relative;z-index: 12;left: 60px; top:-300px;">hellooooooo</h1>
+
+    </div>
+
+
+    <div style="height:500px;width: 500px;" id="sonelink">
+      <img src = "img4.jpg" style="height: 500px;width: 800px;position: relative; top: 60px;">
+      <h1 style="position:relative;z-index: 12;left: 1000px; top:-300px;">hellooooooo</h1>
+
+    </div>
+    <div style="height:500px;width: 500px;" id="stwolink">
+      <img src = "img5.jpg" style="height: 500px;width: 800px; position: relative;top: 90px;">
+      <h1 style="position:relative;z-index: 12;left: 1000px; top:-300px;">hellooooooo</h1>
+
+    </div>
+    <div style="height:500px;width: 500px;" id="sthreelink">
+      <img src = "img6.jpg" style="height: 500px;width: 800px; position: relative; top: 120px;">
+      <h1 style="position:relative;z-index: 12;left: 1000px; top:-300px;">hellooooooo</h1>
+
+    </div>
+
+
+
+    <div style="height:500px;width: 500px;" id="bonelink">
+      <img src = "img6.jpg" style="height: 500px;width: 800px; position: relative; left: 1115px; top: 110px;">
+      <h1 style="position:relative;z-index: 12;left: 60px; top:-300px;">hellooooooo</h1>
+
+    </div>
+    <div style="height:500px;width: 500px;" id="btwolink">
+      <img src = "imh3.png" style="height: 500px;width: 800px;position: relative; left: 1115px; top: 140px">
+      <h1 style="position:relative;z-index: 12;left: 60px; top:-300px;">hellooooooo</h1>
+
+    </div>
+    <div style="height:500px;width: 500px;" id="bthreelink">
+      <img src = "img2.png" style="height: 500px;width: 800px;position: relative; left: 1115px; top: 170px">
+      <h1 style="position:relative;z-index: 12;left: 60px; top:-300px;">hellooooooo</h1>
+
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div style="height:400px;width: 1910px; background-color: black; position: relative; top: 200px; left:0px;" id="contacts">
+      
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a>
+
+      <p style="z-index: 12; position: relative;top: 250px; left: 750px; color:white;">Designed and developed by Harshita Gupta</p>
+
+    </div>
+  
+  
+</body>
+
+<script>
+  function onSignIn(googleUser){
+
+
+    console.log("User is " + JSON.stringify(googleUser.getBasicProfile()))
+    var details = document.querySelector('#sign').innerText = googleUser.getBasicProfile().getName();
+    document.getElementById("sign").innerHTML = details;
+   
+    
+  }
+  function signOut(){
+      
+      gapi.auth2.getAuthInstance().signOut().then(function(){
+        document.querySelector('#content').innerText = " ";
+
+          console.log('user signed out')
+      })      
+  }
+</script>
+
+</html> 
+
+
+
+<!-- resources used: w3schools,geekforgeeks. -->
